@@ -1,28 +1,25 @@
-body{
-    background-color: aquamarine;
+body {
+  background-color: aquamarine;
 }
-h1{
-color:rgb(194, 166, 166); 
-font-family: Rubic;
-
+h1 {
+  color: rgb(194, 166, 166);
+  font-family: Rubic;
 }
-#id{
-    color:greenyellow;
+#id {
+  color: greenyellow;
 }
-.id{
-    color:rgb(5, 9, 77);
-    font-family: Rubic;
-    font-size: 42pt;
-&>b{
-    font-family: 'Times New Roman', Times, serif;
+.id {
+  color: rgb(5, 9, 77);
+  font-family: Rubic;
+  font-size: 42pt;
+  & > b {
+    font-family: "Times New Roman", Times, serif;
+  }
 }
+.block__img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-color: chocolate;
+  background-image: url("../images/image.jpg");
 }
-.block__img{
-   
-    width: 500px;
-    height: 500px;
-    background-size: contain;
-    background-color: chocolate;
-    background-image: url('../images/image.jpg');
-}
-
