@@ -50,13 +50,6 @@ module.exports = {
       template: path.resolve(__dirname, "./src/components/html/index.html"), // какой файл обрабатываем?
       filename: "index.html", // результат - название выходного файла
     }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(
-        __dirname,
-        "./src/components/html/secondPage.html"
-      ), // какой файл обрабатываем?
-      filename: "secondPage.html", // результат - название выходного файла
-    }),
     new CleanWebpackPlugin(),
   ],
 
