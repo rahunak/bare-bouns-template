@@ -5,7 +5,7 @@
   justify-content: center;
   padding-left: 20px;
   overflow: hidden;
-  background-color: #789048;
+  background-color: #000;
 }
 .link{
   text-decoration: none;
@@ -20,6 +20,7 @@
   transition:transform 0.2s ease-in;
 }
 .link_item{
+  color: #fff;
   line-height: 1.5em;
   font-size: 2em;
   font-weight: 600;
@@ -38,6 +39,7 @@
   display: inline-flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #000;
 }
 .gradientLink{
   text-decoration: none;
