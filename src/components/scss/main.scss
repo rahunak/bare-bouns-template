@@ -1,0 +1,124 @@
+@import '_variables';
+
+//---------main----------
+.main-wrapper {
+    display: flex;
+}
+
+.main-content--wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.main-content--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.main-content {
+    position: relative;
+    padding-left: 5.9895vw;
+    padding-top: 14.050493963vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11.481481481vh;
+
+    & .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1.145833333vw;
+    }
+
+    & .button {
+        font-weight: 600;
+        font-size: 0.8333vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8333vw;
+
+        width: 20.833333333vw;
+        height: 5.208333333vw;
+        border-radius: 26.041666667vw;
+
+        &:first-child {
+            background-color: #FD2016;
+            line-height: 150%;
+            letter-spacing: 0.04em;
+
+            & .button-text {
+                width: 13.28125vw;
+            }
+
+        }
+
+        &:last-child {
+            line-height: 156%;
+            letter-spacing: 0.05em;
+            background: hsla(0, 0%, 0%, 0.45);
+            border: 0.052083333vw solid #FFFFFF;
+
+            & .whatsapp--icon {
+                width: 1.5625vw;
+
+                & path {
+                    fill: $whatsapp-color;
+                }
+            }
+        }
+    }
+}
+
+.button_arrow {
+    width: 1.145833333vw;
+}
+
+.content-block {
+    width: 52.65625vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4.16vh;
+}
+
+.content-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.083333333vw;
+}
+
+.content-subtitle {
+    font-weight: 400;
+    font-size: 1.4063vw;
+    line-height: 167%;
+    letter-spacing: 0.02em;
+}
+
+// --- bullet ---
+.bottom-bullet-block {
+    display: flex;
+    justify-content: center;
+    column-gap: 4.947916667vw;
+}
+
+.bullet {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.885416667vw;
+    line-height: 1.40625vw;
+    /* or 159% */
+    letter-spacing: 0.02em;
+
+    & b {
+        font-weight: 800;
+    }
+}

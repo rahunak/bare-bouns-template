@@ -1,7 +1,10 @@
 // css
-import "./components/css/style.css";
+import "./components/css/reset.css";
 // scss
+import "./components/scss/_variables.scss";
+import "./components/scss/common.scss";
 import "./components/scss/header.scss";
 import "./components/scss/main.scss";
+import "./components/scss/scroll-block.scss";
 // scripts
 import "./components/scripts/main";

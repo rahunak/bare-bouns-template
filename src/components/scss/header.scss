@@ -1,0 +1,250 @@
+@import '_variables';
+
+.header-line {
+    opacity: 0.15;
+    width: 100%;
+    background-color: #2A2A2A;
+}
+
+.text {
+    font-size: 0.625vw; //12px
+    font-family: 'Manrope';
+    font-style: normal;
+    color: #2A2A2A;
+}
+
+.top-region--wrapper {
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2.037vh; //22px;
+    align-items: center;
+    padding: 2.037vh 7.1875vw 2.037vh 7.2917vw;
+}
+
+.top-region--links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-region--wrapper {
+    width: 100%;
+}
+
+.bottom-region--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top-region--links .text {
+    font-size: 0.573vw; //11px
+}
+
+.bottom-region--links .text {
+    font-size: 0.625vw; //12px
+}
+
+.bottom-region--links .link {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.833vw;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2A2A2A;
+}
+
+
+
+.make-a-call {
+    & .work-time {
+        font-weight: 400;
+        font-size: 0.625vw; //12px
+        line-height: 0.521vw; //10px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+    }
+
+    & .phone-number {
+        font-weight: 700;
+        font-size: 1.042vw; //20px;
+        line-height: 1 0.521vw; //10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    & .make-a-call--title {
+        font-weight: 400;
+        font-size: 0.625vw; //12px
+        line-height: 1.094vw; //21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+    }
+}
+
+//from left to right top header
+// ---- logo ---
+.logo-and-title {
+    display: flex;
+    column-gap: 1.198vw; //23px;
+
+    & .logo-image-block {
+        display: block;
+
+        & .logo-image {
+            width: 11.09375vw;
+        }
+    }
+
+    & .text {
+        font-weight: 400;
+        line-height: 182%;
+        /* or 20px */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        width: 7.396vw; //142px;
+    }
+
+}
+
+//--- map ---
+.adress-on-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.520833333vw;
+
+    .map-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        width: 1.822916667vw; //35px;
+
+        & .mapCursor {
+            position: absolute;
+            z-index: 1;
+            width: 0.3156vw;
+        }
+
+        & .smallMap_icon {
+            position: absolute;
+            width: 1.8229vw;
+        }
+    }
+
+    & .text {
+        font-weight: 400;
+        font-size: 0.573vw; //11px;
+        line-height: 164%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+//--- look-at-map ---
+.look-at-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.520833vw;
+
+    & .smallMap_icon {
+        width: 0.625vw;
+    }
+}
+
+//---calculate-cost ---
+.calculate-cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.571354167vw;
+
+    & .calculater--wrapper {
+        border-radius: 50%;
+        width: 1.822916667vw;
+        height: 1.822916667vw;
+        background-color: #F8F8F8;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .calculater--icon {
+        position: absolute;
+        width: 0.78125vw;
+    }
+}
+
+//--- ---
+//--- ---
+//--- ---
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.9375vw;
+}
+
+.social-networks-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.3109375vw;
+}
+
+.social-network-icon--wrapper {
+    width: 1.822916667vw;
+    height: 1.822916667vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: contain;
+
+
+}
+
+.whatsapp--icon {
+    width: 0.707291667vw;
+}
+
+.telegram--icon {
+    width: 0.665625vw;
+}
+
+.viber--icon {
+    width: 0.665625vw;
+}
+
+.whatsapp-color {
+    background-color: $whatsapp-color;
+}
+
+.telegram-color {
+    background-color: $telegram-color;
+}
+
+.viber-color {
+    background-color: $viber-color;
+}
+
+.phone_icon {
+    width: 0.3125vw;
+}

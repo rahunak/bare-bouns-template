@@ -1,0 +1,62 @@
+//-----scrool----
+.scroll-block {
+    width: 7.2917vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3.5185vh;
+}
+
+.scroll-block--text {
+    font-family: 'Porsche Next Arabic TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.83vw;
+    line-height: 156%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #EFEFEF;
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+}
+
+.scroll-block--line {
+    height: 45.185vh;
+    width:0.078125vw;
+    background-color: #EFEFEF;
+}
+
+.scroll-block--mouse {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    &:hover{
+        & .dot{
+            transform: translateY(1vh);
+            transition: all 200ms ease-in;
+            & path{
+                transition: all 200ms ease-in;
+                fill:greenyellow;
+            }
+        }
+
+    }
+    & .mouse{
+        width: 0.956770833vw;
+    }
+    & .dot{
+        position: absolute;
+        transition: all 200ms ease-in;
+        width: 0.203645833vw;
+        height:0.203645833vw ;
+    }
+}
+.dot-svg-path{
+    transition: all 200ms ease-in;
+}
