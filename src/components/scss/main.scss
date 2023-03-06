@@ -50,18 +50,46 @@
         height: 5.208333333vw;
         border-radius: 26.041666667vw;
 
-        &:first-child {
+        &.button-red {
             background-color: #FD2016;
             line-height: 150%;
             letter-spacing: 0.04em;
-
+            position: relative;
+            overflow: hidden;
+           
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                
+                display: block;
+                height: inherit;
+                width: 2.5vw;
+                background: linear-gradient(to right, hsla(2, 100%, 100%, 0.1), #FFFFFF);
+                transform: skew(-35deg);
+                // transform: translateX(-1.302083333vw);
+                animation: blick 3500ms linear  infinite;
+                // transform:translateX(20.833333333vw);
+            }
             & .button-text {
                 width: 13.28125vw;
             }
 
+            & .button_arrow {
+                transition: all 200ms ease-in-out;
+            }
+
+            &:hover {
+
+                & .button_arrow {
+                    transition: all 200ms ease-in-out;
+                    transform: rotate(45deg);
+                }
+            }
+
         }
 
-        &:last-child {
+       &.button-transparent {
             line-height: 156%;
             letter-spacing: 0.05em;
             background: hsla(0, 0%, 0%, 0.45);
@@ -80,6 +108,15 @@
 
 .button_arrow {
     width: 1.145833333vw;
+}
+
+@keyframes blick {
+0%{ 
+  transform: skew(-35deg)  translateX(-2.5vw);
+}
+100%{
+    transform: skew(-35deg) translateX(20.833333333vw);
+}
 }
 
 .content-block {
