@@ -1,7 +1,7 @@
 {
-  "name": "example",
+  "name": "bare-bouns-template",
   "version": "1.0.0",
-  "description": "",
+  "description": " This is a blank for web development template",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -25,7 +25,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "sass": "^1.53.0",
